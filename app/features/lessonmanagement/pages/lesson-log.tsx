@@ -6,9 +6,7 @@ export function meta() {
     { name: "description", content: "View product details and information" },
   ];
 }
-export default function StudyLogPage({
-  params: { productId },
-}: Route.ComponentProps) {
+export default function StudyLogPage(_: Route.ComponentProps) {
   return (
     <div className="space-y-10">
       <div className="space-y-1">

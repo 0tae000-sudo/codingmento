@@ -1,0 +1,547 @@
+{
+  "buildManifest": {
+    "serverBundles": {
+      "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0": {
+        "id": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+        "file": "build/server/nodejs_eyJydW50aW1lIjoibm9kZWpzIn0/index.js",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    },
+    "routeIdToServerBundleId": {
+      "common/pages/home": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/lesson/pages/playground": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/lesson/pages/lesson": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/lesson/pages/private-code": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/lesson/pages/private-code-content": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/lessonmanagement/pages/lesson-logs": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/lessonmanagement/pages/lesson-log": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/lessonmanagement/pages/payment": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/teacher/pages/search-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/teacher/pages/student-info": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/teacher/pages/submit-lesson-log": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/teacher/pages/lesson_manage": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/users/pages/dashboard-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/users/pages/messages-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/users/pages/message-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/users/pages/my-profile-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/users/pages/settings-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/users/pages/notifications-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/users/pages/profile-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/auth/pages/login-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/auth/pages/join-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/auth/pages/otp-start-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/auth/pages/otp-complete-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/auth/pages/social-start-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/auth/pages/social-complete-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/auth/pages/logout-page": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0",
+      "features/video/pages/video": "nodejs_eyJydW50aW1lIjoibm9kZWpzIn0"
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "app/root.tsx",
+        "config": {}
+      },
+      "common/pages/home": {
+        "id": "common/pages/home",
+        "parentId": "root",
+        "file": "app/common/pages/home.tsx",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/lesson/pages/playground": {
+        "id": "features/lesson/pages/playground",
+        "parentId": "root",
+        "file": "app/features/lesson/pages/playground.tsx",
+        "path": "/lessons/playground",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/lesson/pages/lesson": {
+        "id": "features/lesson/pages/lesson",
+        "parentId": "root",
+        "file": "app/features/lesson/pages/lesson.tsx",
+        "path": "/lessons/lesson",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/lesson/pages/private-code": {
+        "id": "features/lesson/pages/private-code",
+        "parentId": "root",
+        "file": "app/features/lesson/pages/private-code.tsx",
+        "path": "/lessons/private-code",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/lesson/pages/private-code-content": {
+        "id": "features/lesson/pages/private-code-content",
+        "parentId": "root",
+        "file": "app/features/lesson/pages/private-code-content.tsx",
+        "path": "/lessons/private-code-content/:fileId",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/lessonmanagement/pages/lesson-logs": {
+        "id": "features/lessonmanagement/pages/lesson-logs",
+        "parentId": "root",
+        "file": "app/features/lessonmanagement/pages/lesson-logs.tsx",
+        "path": "/lessonmanagements/logs",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/lessonmanagement/layouts/log-overview-layout": {
+        "id": "features/lessonmanagement/layouts/log-overview-layout",
+        "parentId": "root",
+        "file": "app/features/lessonmanagement/layouts/log-overview-layout.tsx",
+        "config": {}
+      },
+      "features/lessonmanagement/pages/lesson-log": {
+        "id": "features/lessonmanagement/pages/lesson-log",
+        "parentId": "features/lessonmanagement/layouts/log-overview-layout",
+        "file": "app/features/lessonmanagement/pages/lesson-log.tsx",
+        "path": "/lessonmanagements/:logId",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/lessonmanagement/pages/payment": {
+        "id": "features/lessonmanagement/pages/payment",
+        "parentId": "root",
+        "file": "app/features/lessonmanagement/pages/payment.tsx",
+        "path": "/lessonmanagements/payment",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/teacher/pages/search-page": {
+        "id": "features/teacher/pages/search-page",
+        "parentId": "root",
+        "file": "app/features/teacher/pages/search-page.tsx",
+        "path": "/teacher/search",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/teacher/pages/student-info": {
+        "id": "features/teacher/pages/student-info",
+        "parentId": "root",
+        "file": "app/features/teacher/pages/student-info.tsx",
+        "path": "/teacher/student/:profile_id",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/teacher/pages/submit-lesson-log": {
+        "id": "features/teacher/pages/submit-lesson-log",
+        "parentId": "root",
+        "file": "app/features/teacher/pages/submit-lesson-log.tsx",
+        "path": "/teacher/submit-lesson-log",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/teacher/pages/lesson_manage": {
+        "id": "features/teacher/pages/lesson_manage",
+        "parentId": "root",
+        "file": "app/features/teacher/pages/lesson_manage.tsx",
+        "path": "/teacher/lesson-manage",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/users/layouts/dashboard-layout": {
+        "id": "features/users/layouts/dashboard-layout",
+        "parentId": "root",
+        "file": "app/features/users/layouts/dashboard-layout.tsx",
+        "config": {}
+      },
+      "features/users/pages/dashboard-page": {
+        "id": "features/users/pages/dashboard-page",
+        "parentId": "features/users/layouts/dashboard-layout",
+        "file": "app/features/users/pages/dashboard-page.tsx",
+        "path": "/my/dashboard",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/users/layouts/messages-layout": {
+        "id": "features/users/layouts/messages-layout",
+        "parentId": "root",
+        "file": "app/features/users/layouts/messages-layout.tsx",
+        "config": {}
+      },
+      "features/users/pages/messages-page": {
+        "id": "features/users/pages/messages-page",
+        "parentId": "features/users/layouts/messages-layout",
+        "file": "app/features/users/pages/messages-page.tsx",
+        "path": "/my/messages",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/users/pages/message-page": {
+        "id": "features/users/pages/message-page",
+        "parentId": "features/users/layouts/messages-layout",
+        "file": "app/features/users/pages/message-page.tsx",
+        "path": "/my/messages/:messageId",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/users/pages/my-profile-page": {
+        "id": "features/users/pages/my-profile-page",
+        "parentId": "root",
+        "file": "app/features/users/pages/my-profile-page.tsx",
+        "path": "/my/profile",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/users/pages/settings-page": {
+        "id": "features/users/pages/settings-page",
+        "parentId": "root",
+        "file": "app/features/users/pages/settings-page.tsx",
+        "path": "/my/settings",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/users/pages/notifications-page": {
+        "id": "features/users/pages/notifications-page",
+        "parentId": "root",
+        "file": "app/features/users/pages/notifications-page.tsx",
+        "path": "/my/notifications",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/users/layouts/profile-layout": {
+        "id": "features/users/layouts/profile-layout",
+        "parentId": "root",
+        "file": "app/features/users/layouts/profile-layout.tsx",
+        "config": {}
+      },
+      "features/users/pages/profile-page": {
+        "id": "features/users/pages/profile-page",
+        "parentId": "features/users/layouts/profile-layout",
+        "file": "app/features/users/pages/profile-page.tsx",
+        "path": "/users/:username",
+        "index": true,
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/auth/layouts/auth-layout": {
+        "id": "features/auth/layouts/auth-layout",
+        "parentId": "root",
+        "file": "app/features/auth/layouts/auth-layout.tsx",
+        "config": {}
+      },
+      "features/auth/pages/login-page": {
+        "id": "features/auth/pages/login-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "app/features/auth/pages/login-page.tsx",
+        "path": "/auth/login",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/auth/pages/join-page": {
+        "id": "features/auth/pages/join-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "app/features/auth/pages/join-page.tsx",
+        "path": "/auth/join",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/auth/pages/otp-start-page": {
+        "id": "features/auth/pages/otp-start-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "app/features/auth/pages/otp-start-page.tsx",
+        "path": "/auth/otp/start",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/auth/pages/otp-complete-page": {
+        "id": "features/auth/pages/otp-complete-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "app/features/auth/pages/otp-complete-page.tsx",
+        "path": "/auth/otp/complete",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/auth/pages/social-start-page": {
+        "id": "features/auth/pages/social-start-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "app/features/auth/pages/social-start-page.tsx",
+        "path": "/auth/social/:provider/start",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/auth/pages/social-complete-page": {
+        "id": "features/auth/pages/social-complete-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "app/features/auth/pages/social-complete-page.tsx",
+        "path": "/auth/social/:provider/complete",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/auth/pages/logout-page": {
+        "id": "features/auth/pages/logout-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "app/features/auth/pages/logout-page.tsx",
+        "path": "/auth/logout",
+        "config": {
+          "runtime": "nodejs"
+        }
+      },
+      "features/video/pages/video": {
+        "id": "features/video/pages/video",
+        "parentId": "root",
+        "file": "app/features/video/pages/video.tsx",
+        "path": "/video/video",
+        "config": {
+          "runtime": "nodejs"
+        }
+      }
+    }
+  },
+  "reactRouterConfig": {
+    "appDirectory": "/Users/kimtaeyeong/Documents/project/cm2/app",
+    "basename": "/",
+    "buildDirectory": "/Users/kimtaeyeong/Documents/project/cm2/build",
+    "future": {
+      "unstable_middleware": false,
+      "unstable_optimizeDeps": false,
+      "unstable_splitRouteModules": false,
+      "unstable_subResourceIntegrity": false,
+      "unstable_viteEnvironmentApi": false
+    },
+    "routes": {
+      "root": {
+        "path": "",
+        "id": "root",
+        "file": "root.tsx"
+      },
+      "common/pages/home": {
+        "id": "common/pages/home",
+        "parentId": "root",
+        "file": "common/pages/home.tsx",
+        "index": true
+      },
+      "features/lesson/pages/playground": {
+        "id": "features/lesson/pages/playground",
+        "parentId": "root",
+        "file": "features/lesson/pages/playground.tsx",
+        "path": "/lessons/playground"
+      },
+      "features/lesson/pages/lesson": {
+        "id": "features/lesson/pages/lesson",
+        "parentId": "root",
+        "file": "features/lesson/pages/lesson.tsx",
+        "path": "/lessons/lesson"
+      },
+      "features/lesson/pages/private-code": {
+        "id": "features/lesson/pages/private-code",
+        "parentId": "root",
+        "file": "features/lesson/pages/private-code.tsx",
+        "path": "/lessons/private-code"
+      },
+      "features/lesson/pages/private-code-content": {
+        "id": "features/lesson/pages/private-code-content",
+        "parentId": "root",
+        "file": "features/lesson/pages/private-code-content.tsx",
+        "path": "/lessons/private-code-content/:fileId"
+      },
+      "features/lessonmanagement/pages/lesson-logs": {
+        "id": "features/lessonmanagement/pages/lesson-logs",
+        "parentId": "root",
+        "file": "features/lessonmanagement/pages/lesson-logs.tsx",
+        "path": "/lessonmanagements/logs"
+      },
+      "features/lessonmanagement/layouts/log-overview-layout": {
+        "id": "features/lessonmanagement/layouts/log-overview-layout",
+        "parentId": "root",
+        "file": "features/lessonmanagement/layouts/log-overview-layout.tsx"
+      },
+      "features/lessonmanagement/pages/lesson-log": {
+        "id": "features/lessonmanagement/pages/lesson-log",
+        "parentId": "features/lessonmanagement/layouts/log-overview-layout",
+        "file": "features/lessonmanagement/pages/lesson-log.tsx",
+        "path": "/lessonmanagements/:logId"
+      },
+      "features/lessonmanagement/pages/payment": {
+        "id": "features/lessonmanagement/pages/payment",
+        "parentId": "root",
+        "file": "features/lessonmanagement/pages/payment.tsx",
+        "path": "/lessonmanagements/payment"
+      },
+      "features/teacher/pages/search-page": {
+        "id": "features/teacher/pages/search-page",
+        "parentId": "root",
+        "file": "features/teacher/pages/search-page.tsx",
+        "path": "/teacher/search"
+      },
+      "features/teacher/pages/student-info": {
+        "id": "features/teacher/pages/student-info",
+        "parentId": "root",
+        "file": "features/teacher/pages/student-info.tsx",
+        "path": "/teacher/student/:profile_id"
+      },
+      "features/teacher/pages/submit-lesson-log": {
+        "id": "features/teacher/pages/submit-lesson-log",
+        "parentId": "root",
+        "file": "features/teacher/pages/submit-lesson-log.tsx",
+        "path": "/teacher/submit-lesson-log"
+      },
+      "features/teacher/pages/lesson_manage": {
+        "id": "features/teacher/pages/lesson_manage",
+        "parentId": "root",
+        "file": "features/teacher/pages/lesson_manage.tsx",
+        "path": "/teacher/lesson-manage"
+      },
+      "features/users/layouts/dashboard-layout": {
+        "id": "features/users/layouts/dashboard-layout",
+        "parentId": "root",
+        "file": "features/users/layouts/dashboard-layout.tsx"
+      },
+      "features/users/pages/dashboard-page": {
+        "id": "features/users/pages/dashboard-page",
+        "parentId": "features/users/layouts/dashboard-layout",
+        "file": "features/users/pages/dashboard-page.tsx",
+        "path": "/my/dashboard",
+        "index": true
+      },
+      "features/users/layouts/messages-layout": {
+        "id": "features/users/layouts/messages-layout",
+        "parentId": "root",
+        "file": "features/users/layouts/messages-layout.tsx"
+      },
+      "features/users/pages/messages-page": {
+        "id": "features/users/pages/messages-page",
+        "parentId": "features/users/layouts/messages-layout",
+        "file": "features/users/pages/messages-page.tsx",
+        "path": "/my/messages",
+        "index": true
+      },
+      "features/users/pages/message-page": {
+        "id": "features/users/pages/message-page",
+        "parentId": "features/users/layouts/messages-layout",
+        "file": "features/users/pages/message-page.tsx",
+        "path": "/my/messages/:messageId"
+      },
+      "features/users/pages/my-profile-page": {
+        "id": "features/users/pages/my-profile-page",
+        "parentId": "root",
+        "file": "features/users/pages/my-profile-page.tsx",
+        "path": "/my/profile"
+      },
+      "features/users/pages/settings-page": {
+        "id": "features/users/pages/settings-page",
+        "parentId": "root",
+        "file": "features/users/pages/settings-page.tsx",
+        "path": "/my/settings"
+      },
+      "features/users/pages/notifications-page": {
+        "id": "features/users/pages/notifications-page",
+        "parentId": "root",
+        "file": "features/users/pages/notifications-page.tsx",
+        "path": "/my/notifications"
+      },
+      "features/users/layouts/profile-layout": {
+        "id": "features/users/layouts/profile-layout",
+        "parentId": "root",
+        "file": "features/users/layouts/profile-layout.tsx"
+      },
+      "features/users/pages/profile-page": {
+        "id": "features/users/pages/profile-page",
+        "parentId": "features/users/layouts/profile-layout",
+        "file": "features/users/pages/profile-page.tsx",
+        "path": "/users/:username",
+        "index": true
+      },
+      "features/auth/layouts/auth-layout": {
+        "id": "features/auth/layouts/auth-layout",
+        "parentId": "root",
+        "file": "features/auth/layouts/auth-layout.tsx"
+      },
+      "features/auth/pages/login-page": {
+        "id": "features/auth/pages/login-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "features/auth/pages/login-page.tsx",
+        "path": "/auth/login"
+      },
+      "features/auth/pages/join-page": {
+        "id": "features/auth/pages/join-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "features/auth/pages/join-page.tsx",
+        "path": "/auth/join"
+      },
+      "features/auth/pages/otp-start-page": {
+        "id": "features/auth/pages/otp-start-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "features/auth/pages/otp-start-page.tsx",
+        "path": "/auth/otp/start"
+      },
+      "features/auth/pages/otp-complete-page": {
+        "id": "features/auth/pages/otp-complete-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "features/auth/pages/otp-complete-page.tsx",
+        "path": "/auth/otp/complete"
+      },
+      "features/auth/pages/social-start-page": {
+        "id": "features/auth/pages/social-start-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "features/auth/pages/social-start-page.tsx",
+        "path": "/auth/social/:provider/start"
+      },
+      "features/auth/pages/social-complete-page": {
+        "id": "features/auth/pages/social-complete-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "features/auth/pages/social-complete-page.tsx",
+        "path": "/auth/social/:provider/complete"
+      },
+      "features/auth/pages/logout-page": {
+        "id": "features/auth/pages/logout-page",
+        "parentId": "features/auth/layouts/auth-layout",
+        "file": "features/auth/pages/logout-page.tsx",
+        "path": "/auth/logout"
+      },
+      "features/video/pages/video": {
+        "id": "features/video/pages/video",
+        "parentId": "root",
+        "file": "features/video/pages/video.tsx",
+        "path": "/video/video"
+      }
+    },
+    "routeDiscovery": {
+      "mode": "lazy",
+      "manifestPath": "/__manifest"
+    },
+    "serverBuildFile": "index.js",
+    "serverModuleFormat": "esm",
+    "ssr": true
+  },
+  "viteConfig": {
+    "build": {
+      "assetsDir": "assets"
+    }
+  }
+}

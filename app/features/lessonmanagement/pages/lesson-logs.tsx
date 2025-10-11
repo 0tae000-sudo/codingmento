@@ -32,6 +32,7 @@ const searchParamsSchema = z.object({
 // });
 
 export const meta: Route.MetaFunction = ({ data }) => {
+  if (!data) return [];
   const date = DateTime.fromObject({
     year: data.year,
     month: data.month,
