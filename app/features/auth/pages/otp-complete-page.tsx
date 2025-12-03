@@ -7,7 +7,7 @@ import { makeSSRClient } from "~/supa-client";
 import { LoaderCircle } from "lucide-react";
 
 export const meta: Route.MetaFunction = () => {
-  return [{ title: "OTP 인증 | codingmentor" }];
+  return [{ title: "OTP 인증 | codingmento" }];
 };
 
 const formSchema = z.object({

@@ -49,7 +49,7 @@ export default function Video() {
             <div className="relative w-full pt-[56.25%]">
               <div className="absolute inset-0">
                 <YouTube
-                  videoId="XcBY-gEgEKg"
+                  videoId="1e0JReBbrXU"
                   opts={playerOptions}
                   onReady={handlePlayerReady}
                   iframeClassName="w-full h-full"

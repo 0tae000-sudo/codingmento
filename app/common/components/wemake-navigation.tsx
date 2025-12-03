@@ -52,7 +52,7 @@ const menus = [
       {
         name: "강사소개",
         description: "코딩멘토의 대표강사를 소개합니다.",
-        to: "#mentor",
+        to: "#mento",
       },
       {
         name: "커리큘럼",
@@ -107,7 +107,7 @@ export default function Navigation({
                 className="font-bold tracking-tighter text-white text-xl"
                 onClick={() => setSheetOpen(false)}
               >
-                codingmentor
+                codingmento
               </Link>
             </div>
             <div className="p-6">
@@ -128,7 +128,7 @@ export default function Navigation({
         </Sheet>
 
         <Link to="/" className="font-bold tracking-tighter">
-          codingmentor
+          codingmento
         </Link>
         <Separator
           orientation="vertical"

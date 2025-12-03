@@ -156,7 +156,7 @@ export default function HomePage() {
         있습니다.
       </p>
       {/* 강사 소개 */}
-      <section id="mentor" className="mb-12 scroll-mt-24">
+      <section id="mento" className="mb-12 scroll-mt-24">
         <h2 className="text-2xl font-bold mb-2">강사 소개</h2>
         <div className="flex flex-col md:flex-row gap-8 items-start">
           <img
@@ -201,7 +201,7 @@ export default function HomePage() {
             <p className="mb-2">
               📚 <b>학력</b>
               <br />• 부산대학교 사회환경시스템공학부 환경공학과 졸업
-              <br />• 부산대학교 데이터사이언스 대학원 석사 과정 재학 중
+              <br />• 부산대학교 데이터사이언스 대학원 석사 과정
             </p>
             <p className="mb-2">
               🧡 <b>학부모님께 드리는 약속</b>
@@ -337,7 +337,7 @@ export default function HomePage() {
               </h4>
               <ul className="space-y-2 text-sm">
                 <li>• 부산대학교 사회환경시스템공학부 환경공학과 졸업</li>
-                <li>• 부산대학교 데이터사이언스 대학원 석사 과정 재학 중</li>
+                <li>• 부산대학교 데이터사이언스 대학원 석사 과정</li>
               </ul>
             </div>
             <div>

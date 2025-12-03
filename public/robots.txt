@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: /auth/
+Disallow: /my/
+Allow: /
+
+Sitemap: https://codingmento.com/sitemap.xml

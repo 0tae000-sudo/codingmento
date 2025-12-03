@@ -18,6 +18,19 @@ import { makeSSRClient } from "./supa-client";
 import type { Route } from "./+types/root";
 import { getUserById } from "./features/users/queries";
 
+export const meta = () => [
+  { title: "코딩멘토 | 현재 개발자의 맞춤형 코딩 교육" },
+  { name: "description", content: "현재 개발자의 맞춤형 코딩 교육" },
+  { property: "og:type", content: "website" },
+  { property: "og:title", content: "코딩멘토" },
+  {
+    property: "og:description",
+    content: "현재 개발자의 맞춤형 코딩 교육",
+  },
+  { property: "og:image", content: "/images/3.jpg" },
+  { property: "og:locale", content: "ko_KR" },
+];
+
 export const links: Route.LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -29,6 +42,24 @@ export const links: Route.LinksFunction = () => [
     rel: "stylesheet",
     href: "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap",
   },
+  {
+    rel: "icon",
+    type: "image/png",
+    sizes: "32x32",
+    href: "/images/favicon/favicon-32x32.png",
+  },
+  {
+    rel: "icon",
+    type: "image/png",
+    sizes: "16x16",
+    href: "/images/favicon/favicon-16x16.png",
+  },
+  {
+    rel: "apple-touch-icon",
+    sizes: "180x180",
+    href: "/images/favicon/apple-icon-180x180.png",
+  },
+  { rel: "manifest", href: "/images/favicon/manifest.json" },
 ];
 
 export function Layout({ children }: { children: React.ReactNode }) {

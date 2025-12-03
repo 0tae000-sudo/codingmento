@@ -6,7 +6,6 @@ import type {
 
 export namespace Route {
   export interface LinksFunction extends RouterLinksFunction {}
-
   export interface ErrorBoundaryProps {
     error: unknown;
     children?: ReactNode;
