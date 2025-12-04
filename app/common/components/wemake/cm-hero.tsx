@@ -20,7 +20,8 @@ export function Hero({
           <p className="text-lg text-gray-600 dark:text-gray-300">
             초등 고학년부터 성인까지
             <br className="hidden sm:inline" />
-            눈높이에 딱 맞춘 맞춤형 원격 코딩 수업
+            {/* 눈높이에 딱 맞춘 맞춤형 원격 코딩 수업 */}
+            눈높이에 딱 맞춘 맞춤형 코딩 수업
           </p>
           <div className="flex flex-col sm:flex-row justify-center md:justify-start gap-4">
             <Button size="lg" asChild>
