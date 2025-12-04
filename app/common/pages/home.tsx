@@ -141,7 +141,8 @@ export default function HomePage() {
       {/* Description Block */}
       <blockquote className="bg-gray-100 p-4 rounded mb-6">
         코딩멘토는 초등 고학년부터 고등학생, 성인까지 모두를 위한{" "}
-        <strong>원격 맞춤형 코딩 수업</strong>을 제공합니다.
+        {/* <strong>원격 맞춤형 코딩 수업</strong>을 제공합니다. */}
+        <strong>맞춤형 코딩 수업</strong>을 제공합니다.
         <br />
         4년간 100개 이상의 학교와 기관에서 실력을 인정받은 전문 강사가{" "}
         <strong>아이의 눈높이에 맞춰 친절하게 코딩을 지도</strong>합니다.
@@ -266,7 +267,7 @@ export default function HomePage() {
         </div>
       </section>
       {/* 2) Kanban 스타일 시간표 섹션 */}
-      <section id="timetable" className="mb-12 scroll-mt-32">
+      {/* <section id="timetable" className="mb-12 scroll-mt-32">
         <h2 className="text-2xl font-bold mb-4">시간표</h2>
         <div className="overflow-x-auto">
           <div className="inline-flex space-x-4 min-w-max">
@@ -298,9 +299,9 @@ export default function HomePage() {
             ))}
           </div>
         </div>
-      </section>
+      </section> */}
       {/* 멤버십 안내 */}
-      <section className="mb-12">
+      {/* <section className="mb-12">
         <h2 className="text-2xl font-bold mb-2">멤버십 안내 💰</h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           <div className="bg-orange-50 p-4 rounded">
@@ -322,7 +323,7 @@ export default function HomePage() {
             </p>
           </div>
         </div>
-      </section>
+      </section> */}
       {/* 출강 문의 섹션 */}
       <section id="lecture" className="mb-12 scroll-mt-24">
         <h2 className="text-2xl font-bold mb-6">출강 문의 📚</h2>
@@ -653,7 +654,7 @@ export default function HomePage() {
               파이썬 등 텍스트 기반 언어로 확장합니다.
             </p>
           </details>
-          <details className="bg-gray-50 p-4 rounded" open>
+          {/* <details className="bg-gray-50 p-4 rounded" open>
             <summary className="font-semibold">
               Q2. 원격 수업인데, 기술적으로 문제가 생기진 않을까요?
             </summary>
@@ -666,8 +667,8 @@ export default function HomePage() {
               문제가 생기면 <strong>전화 및 원격 지원</strong>을 통해 즉시
               도와드립니다.
             </p>
-          </details>
-          <details className="bg-gray-50 p-4 rounded" open>
+          </details> */}
+          {/* <details className="bg-gray-50 p-4 rounded" open>
             <summary className="font-semibold">
               Q3. 수업은 몇 명이 함께 듣나요?
             </summary>
@@ -677,7 +678,8 @@ export default function HomePage() {
               학생의 성향과 수준에 따라 개별 맞춤이 가능하며, 학부모님과 협의 후
               최적의 수업 형태를 제안드립니다.
             </p>
-          </details>
+          </details> */}
+          {/* 
           <details className="bg-gray-50 p-4 rounded" open>
             <summary className="font-semibold">
               Q4. 수업 시간과 요일은 어떻게 정하나요?
@@ -688,9 +690,10 @@ export default function HomePage() {
               협의하여 정합니다.
             </p>
           </details>
+           */}
           <details className="bg-gray-50 p-4 rounded" open>
             <summary className="font-semibold">
-              Q5. 어떤 자격증을 딸 수 있나요?
+              Q2. 어떤 자격증을 딸 수 있나요?
             </summary>
             <p>코딩멘토에서는 다음과 같은 자격증 취득을 지원합니다.</p>
             <ul className="list-disc ml-6">
@@ -704,7 +707,7 @@ export default function HomePage() {
               <strong>실전 준비까지 철저히 도와드립니다.</strong>
             </p>
           </details>
-          <details className="bg-gray-50 p-4 rounded" open>
+          {/* <details className="bg-gray-50 p-4 rounded" open>
             <summary className="font-semibold">
               Q6. 수업료는 얼마인가요?
             </summary>
@@ -713,16 +716,16 @@ export default function HomePage() {
               <br />첫 4주는 무료 체험 수업으로, 수업 스타일을 충분히 확인하신
               후 결제하실 수 있습니다.
             </p>
-          </details>
+          </details> */}
           <details className="bg-gray-50 p-4 rounded" open>
             <summary className="font-semibold">
-              Q7. 어떤 장비가 필요한가요?
+              Q3. 어떤 장비가 필요한가요?
             </summary>
             <p>
               수업에는 노트북 또는 데스크탑 컴퓨터, 안정적인 인터넷,{" "}
               <b>마이크와 스피커(또는 이어폰)</b>가 필요합니다.
               <br />
-              처음에는 방문하여 세팅과 설치를 도와드리니 걱정하지 않으셔도
+              수업전 세팅과 설치를 유선상으로 도와드리니 걱정하지 않으셔도
               됩니다.
             </p>
           </details>
